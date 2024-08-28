@@ -118,8 +118,8 @@ nav ul li a {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content:space-between;
     }
 
     .menu-toggle img {
@@ -178,7 +178,6 @@ nav ul li a {
 @media (max-width: 768px) {
     .menu-toggle {
         display: inline;
-        float:right;
         padding: 10px;
     }
 
