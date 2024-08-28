@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.login button {
+    background-color: #e11900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.shop-now, .category {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.shop-now {
+    background-color: #e11900;
+    color: white;
+}
+
+.category {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.available {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.platform-icons img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 50px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide the nav by default on mobile */
+        margin-top: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .login {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px; /* Adjusted font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    .shop-now, .category {
+        padding: 10px 20px;
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
+
+    .platform-icons img {
+        width: 25px;
+    }
+}
+
+/* Hamburger Menu for Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background-color: #000;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
