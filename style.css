@@ -177,7 +177,7 @@ nav ul li a {
 /* Hamburger Menu for Mobile */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: inline;
+        display: flex;
         padding: 10px;
     }
 
