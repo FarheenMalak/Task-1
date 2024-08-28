@@ -169,12 +169,16 @@ nav ul li a {
     .platform-icons img {
         width: 25px;
     }
+    nav button{
+        margin-top:2px;
+    }
 }
 
 /* Hamburger Menu for Mobile */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
+        display: inline;
+        float:right;
         padding: 10px;
     }
 
